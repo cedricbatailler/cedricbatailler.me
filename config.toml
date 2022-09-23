@@ -1,3 +1,106 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://cedricbatailler.me/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Cédric Batailler'
+
+theme = 'apero'
+
+ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
+
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    # one of: https://xyproto.github.io/splash/docs/ 
+    style = "github"
+  
+[params]
+  orgName = "Cédric Batailler"
+  orgLocal = ""
+  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  favicon = ""
+  logo = ""
+  mainSections = ["blog", "projects", "pubs"]
+  navallcaps = true
+  # Default image for social sharing and search engines. 
+  # Place image file in `static` folder and specify image name here.
+  sharing_image = "/img/papillons.jpg"
+  # Twitter username (without @). Used when a visitor shares your site on Twitter.
+  twitter = "cedricbatailler"
+
+  # use a built-in color theme
+  # one of: forest / grayscale / peach / plum /
+  #         poppy / sky / violet / water
+  theme = "peach"
+  
+  # or, leave theme empty & make your own palette
+  # see docs at https://hugo-apero.netlify.app/learn/color-themes/
+  # the custom scss file must be in the assets/ folder
+  # add the filename name here, without extension
+  # to use hex colors instead of named tachyons colors, include "hex" in filename
+  custom_theme = "hex-colors" 
+  # use an embedded font
+  customtextFontFamily = "Commissioner"
+  customheadingFontFamily = "Fraunces"
+  
+  # or choose a system font stack
+  textFontFamily = "sans-serif"
+  headingFontFamily = "serif"
+
+[menu]
+  [[menu.header]]
+    name = "Notes"
+    title = "My project portfolio"
+    url = "/blog/"
+    weight = 1
+  [[menu.header]]
+    name = "Projects"
+    title = "My project portfolio"
+    url = "/project/"
+    weight = 1
+  [[menu.header]]
+    name = "Pubs"
+    title = "My project portfolio"
+    url = "/pubs/"
+    weight = 2
+
+[[params.social]]
+    icon = "twitter"
+    icon_pack = "fab"
+    link = "https://twitter.com/cedricbatailler"
+[[params.social]]
+    icon      = "github" 
+    icon_pack = "fab"
+    url       = "https://github.com/cedricbatailler"
+[[params.social]]
+    icon      = "google-scholar" 
+    icon_pack = "ai"
+    url       = "https://scholar.google.fr/citations?user=3KAcQowAAAAJ"
+[[params.social]]
+    icon      = "linkedin" 
+    icon_pack = "fab"
+    url       = "https://www.linkedin.com/in/cedricbatailler/"
+
+# see https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = false
+    anonymizeIP = true
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
