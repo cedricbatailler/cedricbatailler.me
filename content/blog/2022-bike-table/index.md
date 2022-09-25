@@ -82,7 +82,12 @@ will first define a title, and a label spanning over two columns.
 gt_table <-
   gt_table |>
   tab_header(
-    title = "What does it look like to bike in France's biggest cities?"
+    title = "What does it look like to bike in France's biggest cities?",
+    subtitle = 
+      "Every few year, the FUB conducts a national survey on bike useage. 
+      People are invited to report what do they thing about bike infrastructure 
+      in their city. The perfect bike-friendly city would score an A, the worst
+      one an F."
   ) |>
   tab_spanner(
     label = "Time",
@@ -148,13 +153,13 @@ gt_table <- gt_table |> gtExtras::gt_theme_nytimes()
 Once everything done, all we have to do is print the object so that we can show
 this pretty table to our friends.
 
-------------------------------------------------------------------------
-
 ``` r
 gt_table
 ```
 
-<div id="neswuqxbbj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div class="highlight-screen">
+
+<div id="frmsoyanbu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -162,7 +167,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#neswuqxbbj .gt_table {
+#frmsoyanbu .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -187,7 +192,7 @@ html {
   border-left-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_heading {
+#frmsoyanbu .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -199,7 +204,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_title {
+#frmsoyanbu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -211,7 +216,7 @@ html {
   border-bottom-width: 0;
 }
 
-#neswuqxbbj .gt_subtitle {
+#frmsoyanbu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -223,13 +228,13 @@ html {
   border-top-width: 0;
 }
 
-#neswuqxbbj .gt_bottom_border {
+#frmsoyanbu .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_col_headings {
+#frmsoyanbu .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -244,7 +249,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_col_heading {
+#frmsoyanbu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -264,7 +269,7 @@ html {
   overflow-x: hidden;
 }
 
-#neswuqxbbj .gt_column_spanner_outer {
+#frmsoyanbu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -276,15 +281,15 @@ html {
   padding-right: 4px;
 }
 
-#neswuqxbbj .gt_column_spanner_outer:first-child {
+#frmsoyanbu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#neswuqxbbj .gt_column_spanner_outer:last-child {
+#frmsoyanbu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#neswuqxbbj .gt_column_spanner {
+#frmsoyanbu .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 1px;
   border-bottom-color: #334422;
@@ -296,7 +301,7 @@ html {
   width: 100%;
 }
 
-#neswuqxbbj .gt_group_heading {
+#frmsoyanbu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -321,7 +326,7 @@ html {
   vertical-align: middle;
 }
 
-#neswuqxbbj .gt_empty_group_heading {
+#frmsoyanbu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -336,15 +341,15 @@ html {
   vertical-align: middle;
 }
 
-#neswuqxbbj .gt_from_md > :first-child {
+#frmsoyanbu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#neswuqxbbj .gt_from_md > :last-child {
+#frmsoyanbu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#neswuqxbbj .gt_row {
+#frmsoyanbu .gt_row {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 5px;
@@ -363,7 +368,7 @@ html {
   overflow-x: hidden;
 }
 
-#neswuqxbbj .gt_stub {
+#frmsoyanbu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -376,7 +381,7 @@ html {
   padding-right: 5px;
 }
 
-#neswuqxbbj .gt_stub_row_group {
+#frmsoyanbu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -390,11 +395,11 @@ html {
   vertical-align: top;
 }
 
-#neswuqxbbj .gt_row_group_first td {
+#frmsoyanbu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#neswuqxbbj .gt_summary_row {
+#frmsoyanbu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -404,16 +409,16 @@ html {
   padding-right: 5px;
 }
 
-#neswuqxbbj .gt_first_summary_row {
+#frmsoyanbu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_first_summary_row.thick {
+#frmsoyanbu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#neswuqxbbj .gt_last_summary_row {
+#frmsoyanbu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +428,7 @@ html {
   border-bottom-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_grand_summary_row {
+#frmsoyanbu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -433,7 +438,7 @@ html {
   padding-right: 5px;
 }
 
-#neswuqxbbj .gt_first_grand_summary_row {
+#frmsoyanbu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -443,11 +448,11 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_striped {
+#frmsoyanbu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#neswuqxbbj .gt_table_body {
+#frmsoyanbu .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -456,7 +461,7 @@ html {
   border-bottom-color: #FFFFFF;
 }
 
-#neswuqxbbj .gt_footnotes {
+#frmsoyanbu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -470,7 +475,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_footnote {
+#frmsoyanbu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -479,7 +484,7 @@ html {
   padding-right: 5px;
 }
 
-#neswuqxbbj .gt_sourcenotes {
+#frmsoyanbu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -493,7 +498,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#neswuqxbbj .gt_sourcenote {
+#frmsoyanbu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -501,73 +506,78 @@ html {
   padding-right: 5px;
 }
 
-#neswuqxbbj .gt_left {
+#frmsoyanbu .gt_left {
   text-align: left;
 }
 
-#neswuqxbbj .gt_center {
+#frmsoyanbu .gt_center {
   text-align: center;
 }
 
-#neswuqxbbj .gt_right {
+#frmsoyanbu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#neswuqxbbj .gt_font_normal {
+#frmsoyanbu .gt_font_normal {
   font-weight: normal;
 }
 
-#neswuqxbbj .gt_font_bold {
+#frmsoyanbu .gt_font_bold {
   font-weight: bold;
 }
 
-#neswuqxbbj .gt_font_italic {
+#frmsoyanbu .gt_font_italic {
   font-style: italic;
 }
 
-#neswuqxbbj .gt_super {
+#frmsoyanbu .gt_super {
   font-size: 65%;
 }
 
-#neswuqxbbj .gt_footnote_marks {
+#frmsoyanbu .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#neswuqxbbj .gt_asterisk {
+#frmsoyanbu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#neswuqxbbj .gt_indent_1 {
+#frmsoyanbu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#neswuqxbbj .gt_indent_2 {
+#frmsoyanbu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#neswuqxbbj .gt_indent_3 {
+#frmsoyanbu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#neswuqxbbj .gt_indent_4 {
+#frmsoyanbu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#neswuqxbbj .gt_indent_5 {
+#frmsoyanbu .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   <thead class="gt_header">
     <tr>
-      <td colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="font-family: &#39;Libre Franklin&#39;; font-weight: 800;">What does it look like to bike in France's biggest cities?</td>
+      <td colspan="6" class="gt_heading gt_title gt_font_normal" style="font-family: &#39;Libre Franklin&#39;; font-weight: 800;">What does it look like to bike in France's biggest cities?</td>
     </tr>
-    
+    <tr>
+      <td colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Every few year, the FUB conducts a national survey on bike useage. 
+      People are invited to report what do they thing about bike infrastructure 
+      in their city. The perfect bike-friendly city would score an A, the worst
+      one an F.</td>
+    </tr>
   </thead>
   <thead class="gt_col_headings">
     <tr>
@@ -1816,23 +1826,28 @@ html {
 </table>
 </div>
 
-------------------------------------------------------------------------
+</div>
+
+Of course, we could continue editing the table, but with a few lines, we
+already have a table which is production ready. This is enough to help people
+know how likely it is that their bike will sleep in a garage.
 
 # What now?
 
-Well, first, as we can see we can hope that these 250M Borne's goverment is
-offering will be well spent, because there is definetely room for improvement.
-As we can see, there's a lot of red in the grading.
+Well, first, as we can see, there is definitely room for improvement. There's
+a lot of red in the grading. Hopefully, the 250M investement plan will be spent
+wisely.
 
-Second, we can wait for the FUB to the 2021 data. A nice thing with using R for
-table is that it is reproducible and it can be updated easily. Once the data
-available, all we have to do is plug the 2021 scores to our table so the full
-table gets updated. Hopefully it will be easier to see what's the trend in the
-different cities when it comes to bike useability. Right now, a two point spark
-chart feels a bit uninformative.
+Second, by using code to build the table, it will be easy to update it. Right
+now, as far as I know, the FUB data for 2021 is not yet available, but it will
+be very easy to add a column for every year the survey is conducted. This will
+probably help making the spark chart more informative. Two points is a bit too
+little.
 
-And, finally, when it comes to what we can learn from the table city-wise, get
-your bike and come visit Grenoble!
+And, finally, as a concluding thought, if glancing at the table is not enough,
+I can assure that a bike is definitely handy in Grenoble. The data which was
+used do map onto something very concrete for a lot of people and surely it can
+help design the world of tomorrow.
 
 {{< figure src="img/fabe-collage-diqJhQtHHNk-unsplash.jpg" caption="A panoramic view of Grenoble. Photo by Fabe collage." >}}
 

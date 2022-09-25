@@ -133,7 +133,12 @@ will first define a title, and a label spanning over two columns.
 gt_table <-
   gt_table |>
   tab_header(
-    title = "What does it look like to bike in France's biggest cities?"
+    title = "What does it look like to bike in France's biggest cities?",
+    subtitle = 
+      "Every few year, the FUB conducts a national survey on bike useage. 
+      People are invited to report what do they thing about bike infrastructure 
+      in their city. The perfect bike-friendly city would score an A, the worst
+      one an F."
   ) |>
   tab_spanner(
     label = "Time",
@@ -199,28 +204,37 @@ gt_table <- gt_table |> gtExtras::gt_theme_nytimes()
 Once everything done, all we have to do is print the object so that we can show 
 this pretty table to our friends.
 
----
-
 ```{r}
+#| eval: false
 gt_table
 ```
 
----
+:::{.highlight-screen}
+```{r}
+#| echo: false
+gt_table
+```
+:::
+
+Of course, we could continue editing the table, but with a few lines, we 
+already have a table which is production ready. This is enough to help people 
+know how likely it is that their bike will sleep in a garage.
 
 # What now? 
 
-Well, first, as we can see we can hope that these 250M Borne's goverment is 
-offering will be well spent, because there is definetely room for improvement. 
-As we can see, there's a lot of red in the grading. 
+Well, first, as we can see, there is definitely room for improvement. There's 
+a lot of red in the grading. Hopefully, the 250M investement plan will be spent
+wisely.
 
-Second, we can wait for the FUB to the 2021 data. A nice thing with using R for
-table is that it is reproducible and it can be updated easily. Once the data
-available, all we have to do is plug the 2021 scores to our table so the full
-table gets updated. Hopefully it will be easier to see what's the trend in the
-different cities when it comes to bike useability. Right now, a two point spark
-chart feels a bit uninformative. 
+Second, by using code to build the table, it will be easy to update it. Right
+now, as far as I know, the FUB data for 2021 is not yet available, but it will
+be very easy to add a column for every year the survey is conducted. This will
+probably help making the spark chart more informative. Two points is a bit too 
+little.
 
-And, finally, when it comes to what we can learn from the table city-wise, get 
-your bike and come visit Grenoble!
+And, finally, as a concluding thought, if glancing at the table is not enough,
+I can assure that a bike is definitely handy in Grenoble. The data which was 
+used do map onto something very concrete for a lot of people and surely it can
+help design the world of tomorrow.
 
 {{{< figure src="img/fabe-collage-diqJhQtHHNk-unsplash.jpg" caption="A panoramic view of Grenoble. Photo by Fabe collage." >}}}
