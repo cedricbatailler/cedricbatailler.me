@@ -2,7 +2,9 @@
 date: 2020-05-12
 
 title: Mapping COVID-19 data in France with R
-summary: "A small analysis of spatial data."
+summary: | 
+  How to use R to map Covid-related data. This could almost have become
+  covidtracker.fr but I had a doctoral dissertation to write.
 
 format: hugo
 
