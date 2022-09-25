@@ -1,0 +1,226 @@
+---
+date: 2022-09-24
+
+title: Biking is awesome, so is making tables.
+summary: | 
+  Let's use the `{gt}` package to see which of largest cities in France are the 
+  most bike friendly. Because tables deserve love as much as plots.
+
+format: hugo
+freeze: auto
+tags:
+- R
+---
+
+# France & biking
+
+Last week, French prime minister Elisabeth Borne argued that France should 
+become a "nation vélo"[^1]. Whatever this means, the government is planning
+on putting 250M€ on the table to help people developing bike habits. 
+
+[^1]: https://www.lemonde.fr/planete/article/2022/09/20/la-premiere-ministre-elisabeth-borne-plaide-pour-une-nation-velo_6142468_3244.html
+
+{{{< figure src="img/tiffany-nutt-0ClfreiNppM-unsplash.jpg" caption="Photo by Tiffany Nutt." >}}}
+
+But, what is exactly the situation in France with biking? Well, thanks to the 
+**Fédération des Utilisateurs de Bicyclettes** (or FUB for short), we can have
+a look. Every now and then since 2017, the FUB conducts national surveys where 
+cyclists are invited to report their opinion on the biking infrastructure of 
+their cities.
+
+This will help us see what cyclists think about their city. 
+
+# The code
+
+For the sake of reading length, I will skip the data wrangling part of the 
+data set[^2] and jump right into the formatting part of the table.
+
+[^2]:  https://public.tableau.com/app/profile/fub4080/viz/2019Barometreresultatsfinal/
+
+Before going into details, it is worth remembering that a table is more than a 
+mere tabular representation of data. It can have captions, a title, or even 
+label spanning over several columns.
+
+{{{< figure src="img/mourizal-zativa-OSvN1fBcXYE-unsplash.jpg" caption="Building a table with {gt} feels like building blocks. Photo by Mourizal Zativa" >}}}
+
+To format the table, we will use the [`{gt}` package](https://gt.rstudio.com/).
+This package offers a grammar of table--this is what `{gt}` stands for--the same
+way `{ggplot2}` offers a grammar of graphics.
+
+```{r packages}
+#| echo: false
+#| message: false
+
+library(pins)
+library(tidyverse)
+library(glue)
+```
+
+```{r}
+library(gt)
+library(gtExtras)
+```
+
+```{r helper funs}
+#| echo: false
+#| message: false
+grade_to_number <-
+   c(
+    A = 1,
+    B = 2,
+    C = 3,
+    D = 4,
+    E = 5,
+    F = 6,
+    G = 7
+  )
+
+number_to_grade <-
+  grade_to_number |>
+  enframe() |>
+  select(2, 1) |>
+  mutate(across(.cols = everything(), .fns = ~ paste0(">", .x, "<"))) |>
+  deframe()
+```
+
+```{r data import & wrangling}
+#| echo: false
+#| message: false
+
+board <- board_s3("pins-test-cedric")
+
+dat <- 
+  pin_read(board, "fub_2019")|>
+  janitor::clean_names() |>
+  distinct()
+
+gt_dat <-
+  dat |>
+  distinct() |>
+  filter(categorie %in% c("[50 000-100 000[", "[100 000-200 000[", "[200 000 et plus")) |>
+  select(commune, population, note = climat_velo_num, starts_with("note"), -contains("classe")) |>
+  mutate(
+    note_2017 = note_globale_moy + note_progres_moy,
+    note_2019 = note_globale_moy,
+    .keep = "unused"
+  ) |>
+  rowwise() |>
+  mutate(evolution = list(c(note_2017, note_2019))) |>
+  ungroup() |>
+  arrange(-population) |>
+  mutate(note = recode(note, !!!grade_to_number))
+```
+
+Currently, in our environment, we have a tibble with the data we want to put
+on a table.
+
+```{r}
+head(gt_dat)
+```
+
+The same way we need to map the data to a plot beore defining its
+characteristics, we will need to map our data to the table. 
+
+```{r}
+gt_table <- gt(gt_dat) 
+```
+
+Then, we can use a wide range of function to define our tables. First, 
+let's figure out the header part--note that this step could come at the end. We 
+will first define a title, and a label spanning over two columns.  
+
+```{r}
+gt_table <-
+  gt_table |>
+  tab_header(
+    title = "What does it look like to bike in France's biggest cities?"
+  ) |>
+  tab_spanner(
+    label = "Time",
+    columns = c(note_2017, note_2019)
+  )
+```
+
+Then we can rename some of the columns for the sake of clarity.
+
+```{r}
+gt_table <-
+  gt_table |> 
+  cols_label(
+    population = "population (k)",
+    note_2017 = "2017",
+    note_2019 = "2019"
+  )
+```
+
+We can also decide to format the cells, and even replace a list-column with a
+spark line chart! 
+
+```{r}
+gt_table <-
+  gt_table |> 
+  
+  # Let's format how some numbers will be shown
+  fmt_number(
+    columns = 2,
+    scale_by = 1e-3
+  ) |>
+  fmt_number(
+    columns = c(4, 5),
+    decimals = 2,
+  ) |>
+  
+  # A small color box around cities grading
+  gtExtras::gt_color_box(
+    note,
+    domain = c(1, 7), palette = c("green", "orange", "red")) |>
+  text_transform(
+    locations  = cells_body(columns = note),
+    fn = function(x) { str_replace_all(x, number_to_grade) }
+  ) |>
+
+  # Let's transform our list-column in a sparkline
+  gtExtras::gt_plt_sparkline(evolution)
+```
+
+Let's give credit where it is due.
+
+```{r}
+gt_table <- gt_table |> 
+  tab_source_note(source_note = md("Source: _FUB_"))
+```
+
+And let's add a theme so that our table looks nice out of the box. 🪄
+
+```{r}
+gt_table <- gt_table |> gtExtras::gt_theme_nytimes() 
+```
+
+Once everything done, all we have to do is print the object so that we can show 
+this pretty table to our friends.
+
+---
+
+```{r}
+gt_table
+```
+
+---
+
+# What now? 
+
+Well, first, as we can see we can hope that these 250M Borne's goverment is 
+offering will be well spent, because there is definetely room for improvement. 
+As we can see, there's a lot of red in the grading. 
+
+Second, we can wait for the FUB to the 2021 data. A nice thing with using R for
+table is that it is reproducible and it can be updated easily. Once the data
+available, all we have to do is plug the 2021 scores to our table so the full
+table gets updated. Hopefully it will be easier to see what's the trend in the
+different cities when it comes to bike useability. Right now, a two point spark
+chart feels a bit uninformative. 
+
+And, finally, when it comes to what we can learn from the table city-wise, get 
+your bike and come visit Grenoble!
+
+{{{< figure src="img/fabe-collage-diqJhQtHHNk-unsplash.jpg" caption="A panoramic view of Grenoble. Photo by Fabe collage." >}}}
