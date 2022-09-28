@@ -118,14 +118,14 @@ on a table.
 head(gt_dat)
 ```
 
-The same way we need to map the data to a plot beore defining its
+The same way we need to map the data to a plot before defining its
 characteristics, we will need to map our data to the table. 
 
 ```{r}
 gt_table <- gt(gt_dat) 
 ```
 
-Then, we can use a wide range of function to define our tables. First, 
+Then, we can use a wide range of functions to define our tables. First, 
 let's figure out the header part--note that this step could come at the end. We 
 will first define a title, and a label spanning over two columns.  
 
@@ -135,7 +135,7 @@ gt_table <-
   tab_header(
     title = "What does it look like to bike in France's biggest cities?",
     subtitle = 
-      "Every few year, the FUB conducts a national survey on bike useage. 
+      "Every few year, the FUB conducts a national survey on bike usage. 
       People are invited to report what do they thing about bike infrastructure 
       in their city. The perfect bike-friendly city would score an A, the worst
       one an F."
@@ -217,7 +217,7 @@ gt_table
 :::
 
 Of course, we could continue editing the table, but with a few lines, we 
-already have a table which is production ready. This is enough to help people 
+already have a table that is production ready. This is enough to help people 
 know how likely it is that their bike will sleep in a garage.
 
 # What now? 
@@ -233,7 +233,7 @@ probably help making the spark chart more informative. Two points is a bit too
 little.
 
 And, finally, as a concluding thought, if glancing at the table is not enough,
-I can assure that a bike is definitely handy in Grenoble. The data which was 
+I can assure that a bike is definitely handy in Grenoble. The data that were 
 used do map onto something very concrete for a lot of people and surely it can
 help design the world of tomorrow.
 
