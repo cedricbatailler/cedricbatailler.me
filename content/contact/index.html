@@ -1,47 +1,43 @@
 ---
 title: Contact
 description: The "kitchen sink," if you will ... a page showing examples of type and page elements included in this template.
-date: 2019-02-18T12:27:33-06:00
+date: 2022-09-28
 draft: false
-# layout options are standard (default) or wide-body
-layout: wide-body
+layout: standard
 show_title_as_headline: false
 ---
 
 <div class="flex-l">
-  <div class="w-50-l pr4-l">
+  <div class="w-60-ns pr4-ns">
+    <h1 class="f2 f1-ns measure lh-solid">Contact</h1>
+    <p class="f5 measure lh-copy">I am open for <strong>stats and methods consulting</strong>!</p>
+    <p class="f5 measure lh-copy">If you want to be sure that you are 
+      using your research data to their fullest potential, <strong>hit me up</strong>! I have a 
+      Ph.D. in psychology and cognitive science, I have been doing research
+      in method and stats, I spent more than 500 hours teaching college students, and my friends will testify that I can effortlessely speak about R for days!
+    </p>
+    <p class="f5 measure lh-copy">If you want to hire me, here's a short 
+      list of things I can do with you:
+      <ul>
+        <li>Experimental design</li>
+        <li>Power analysis</li>
+        <li>Frequentist stats</li>
+        <li>Multilevel modeling</li>
+        <li>R {{< emoji ":heart:" >}}</li>
+      </ul>
+    </p>
   </div>
-  <div class="w-50-l pl4-l">
-    <form name="sample-submission" method="post" accept-charset="utf-8" netlify>
+  <div class="w-40-l pl4-l">
+    <form name="contact-form" method="post" accept-charset="utf-8" netlify>
       <fieldset>    
         <label for="full-name">Full Name</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last" required>
         <label for="email-address">Email address</label>
         <input type="email" name="_replyto" id="email-address" placeholder="your@email.here" required>
         <label for="message">Message</label>
-        <textarea rows="4" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required></textarea>
-        <button type="submit">This is a test</button>
+        <textarea rows="8" name="message" id="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque imperdiet blandit. Nam tincidunt nisl augue, eget facilisis lectus fermentum ut. Maecenas ligula ligula, cursus a cursus quis, dapibus a mauris. Donec aliquam orci elit, eget imperdiet libero suscipit quis. Donec facilisis euismod erat a ullamcorper." required></textarea>
+        <button type="submit">Send me a message!</button>
       </fieldset>
-      
-      
-      <!-- <fieldset id="sample-inputs">
-        <legend>Sample Form</legend>
-        <label for="full-name">Full Name</label>
-        <input type="text" name="name" id="full-name" placeholder="First and Last" required>
-        <label for="email-address">Email address</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="your@email.here" required>
-        <label for="email-purpose">Purpose</label>
-        <select name="purpose" id="email-purpose">
-          <option value="initial-contact" selected>Initial Contact</option>
-          <option value="in-response">In Response</option>
-          <option value="follow-up">Follow Up</option>
-          <option value="check-in">Check In</option>
-          <option value="opt-out">Opt Out</option>
-        </select>
-        <label for="message">Message</label>
-        <textarea rows="4" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required></textarea>
-      </fieldset>
-      <input type="submit" value="Button Label"> -->
     </form>
   </div>
 </div>
