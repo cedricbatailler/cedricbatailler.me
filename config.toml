@@ -19,7 +19,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
 [imaging]
   quality = 70
   resampleFilter = "Lanczos"
-  
+
 # HUGO-APERO SETTINGS ---------------------------------------------------------
 [params]
   orgName = "Cédric Batailler"
@@ -76,6 +76,11 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
     title = "My project portfolio"
     url = "/pubs/"
     weight = 2
+  [[menu.header]]
+    name = "Contact"
+    title = "My project portfolio"
+    url = "/contact/"
+    weight = 3
 
 [[params.social]]
     icon = "twitter"
