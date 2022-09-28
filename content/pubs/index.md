@@ -14,7 +14,7 @@ pdf, but feel free to shoot me an email if you can't access a paper. Some paper 
 
 **Batailler, C.**, Brannon, S. M., Teas, P. E., & Gawronski, B. (2021). A signal detection approach to understandingthe identification of fake news. _Perspectives on Psychological Science_, 174569162098613. [10.1177/1745691620986135](https://doi.org/10.1177/1745691620986135)  
 [<i class="fa-solid fa-file-pdf"></i>](pdf/2021_BBTG_PPS.pdf)
-
+[<i class="ai ai-osf"></i>](https://osf.io/uc9me/)
 
 **Batailler, C.**, Muller, D., Nurra, C., Rougier, M., & Trouilloud, D. (2021). Math approach training changes implicitidentification with math: A close preregistered replication. _Journal of Experimental Social Psychology_, 92, 104059. [10.1016/j.jesp.2020.104059](https://doi.org/10.1016/j.jesp.2020.104059)  
 [<i class="fa-solid fa-file-pdf"></i>](pdf/2021_BMNRT_JESP.pdf)
@@ -22,7 +22,6 @@ pdf, but feel free to shoot me an email if you can't access a paper. Some paper 
 
 Rougier, M., Muller, D., Courset, R., Smeding, A., Devos, T., & **Batailler, C**. (2020). Toward the use of approach/avoidancetendencies as attitude measures: Individual‑ and group‑level variability of the ingroup bias. _European Journal of Social Psychology_, ejsp.2653. [10.1002/ejsp.2653](https://doi.org/10.1002/ejsp.2653)  
 [<i class="fa-solid fa-file-pdf"></i>](pdf/2020_RMCSDB_EJSP.pdf)
-[<i class="ai ai-osf"></i>]()
 
 Nalborczyk, L., **Batailler, C.**, Lœvenbruck, H., Vilain, A., & Bürkner, P.‑C. (2019). An introduction to bayesian mul‑tilevel models using brms: A case study of gender effects on vowel variability in standard indonesian. _Journal of Speech, Language, and Hearing Research_,62(5), 1225–1242. [10.1044/2018_JSLHR-S-18-0006](https://doi.org/10.1044/2018_JSLHR-S-18-0006)  
 [<i class="fa-solid fa-file-pdf"></i>](pdf/2019_NBLVB_JSLHR.pdf)
