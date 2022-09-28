@@ -22,10 +22,10 @@ links:
 # Showing causality
 
 Effects things have on other are sometimes indirect. Let's take an example
-invoving a soccer ball and a broken glass. Sometimes, you will break a glass by
+involving a soccer ball and a broken glass. Sometimes, you will break a glass by
 shooting the ball right onto it. But sometimes not. Sometimes, the ball will
-land next to a cat, a cat peacefully sleeping on someone's laps. Sometimes, the 
-cat will ended up scared which will result in a jump right onto a table, table 
+land next to a cat, a cat peacefully sleeping on someone's lap. Sometimes, the 
+cat will end up scared which will result in a jump right onto a table, table 
 on which was the glass[^1]. Indirect.
 
 And, sometimes, it is important to investigate how these indirect effets are 
@@ -33,10 +33,10 @@ chained. It is known that people are less likely to buy drugs with complex
 name[^2]. But why? What is the chain behind this effect?
 
 **Mediation analysis** is a statistical tool that can be use to find out that 
-the reason why people are less likely to buy drug with complex name is because 
-they percieved the drugs as more dangerous. While there is several way to
-conduct mediation analysis, the `JSmediation` package implements the best[^3] 
-of them: joint-significance.
+the reason why people are less likely to buy drugs with complex name is because 
+they percieved the drugs as more dangerous. While there are several ways to
+conduct mediation analysis, the `JSmediation` package implements the best one
+of them[^3]: joint-significance.
 
 Have a look at [the documentation](https://jsmediation.cedricbatailler.me/) and 
 give it a shot!
