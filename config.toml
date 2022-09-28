@@ -52,8 +52,8 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
   custom_theme = "hex-colors" 
 
   # use an embedded font
-  customtextFontFamily = "Commissioner"
-  customheadingFontFamily = "Fraunces"
+  customtextFontFamily = "Atkinson Hyperlegible"
+  customheadingFontFamily = "Metropolis"
   
   # or choose a system font stack
   textFontFamily = "sans-serif"
