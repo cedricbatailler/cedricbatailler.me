@@ -6,11 +6,9 @@ layout: single-sidebar
 date: "2022-09-23"
 ---
 
-These are the projects on which I worked that ended in peer-reviewed journals. 
-Everything APA-formatted. 
-
-Each paper should come with a link to its pdf, but feel free to shoot me an 
-email if you can't access a paper.
+These are the projects on which I worked that **ended in peer-reviewed 
+journals**. Everything APA-formatted. Each paper should come with a link to its 
+pdf, but feel free to shoot me an email if you can't access a paper.
 
 ---
 
