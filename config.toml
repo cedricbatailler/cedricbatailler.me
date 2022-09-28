@@ -1,4 +1,5 @@
-baseURL = 'https://new.cedricbatailler.me/'
+baseURL = 'https://new.cedricbatailler.me/' # TODO: Change url
+
 languageCode = 'en-us'
 title = 'Cédric Batailler'
 
@@ -19,14 +20,19 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
   quality = 70
   resampleFilter = "Lanczos"
   
+# HUGO-APERO SETTINGS ---------------------------------------------------------
 [params]
   orgName = "Cédric Batailler"
   orgLocal = ""
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+
   favicon = ""
   logo = ""
+
   mainSections = ["blog", "projects", "pubs"]
   navallcaps = true
+
+  # TODO: update social sharing image
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
@@ -44,6 +50,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
   # add the filename name here, without extension
   # to use hex colors instead of named tachyons colors, include "hex" in filename
   custom_theme = "hex-colors" 
+
   # use an embedded font
   customtextFontFamily = "Commissioner"
   customheadingFontFamily = "Fraunces"
@@ -52,6 +59,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
   textFontFamily = "sans-serif"
   headingFontFamily = "serif"
 
+# NAVBAR ----------------------------------------------------------------------
 [menu]
   [[menu.header]]
     name = "Notes"
@@ -86,6 +94,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
     icon_pack = "fab"
     url       = "https://www.linkedin.com/in/cedricbatailler/"
 
+# PRIVACY CONTENT -------------------------------------------------------------
 # see https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
   [privacy.disqus]
