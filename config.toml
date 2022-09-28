@@ -69,7 +69,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
   [[menu.header]]
     name = "Projects"
     title = "My project portfolio"
-    url = "/project/"
+    url = "/projects/"
     weight = 1
   [[menu.header]]
     name = "Pubs"
