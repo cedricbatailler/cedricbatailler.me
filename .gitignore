@@ -1,1 +1,3 @@
+# hugo files
+/resources/_gen/
 .hugo_build.lock
