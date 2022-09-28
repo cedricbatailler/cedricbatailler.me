@@ -14,6 +14,10 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$" ]
   [markup.highlight]
     # one of: https://xyproto.github.io/splash/docs/ 
     style = "github"
+
+[imaging]
+  quality = 70
+  resampleFilter = "Lanczos"
   
 [params]
   orgName = "Cédric Batailler"
