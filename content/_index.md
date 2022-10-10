@@ -14,6 +14,6 @@ image_left: true
 
 show_action_link: true
 action_link: /blog/
-action_label: "Let's go &rarr;"
+action_label: "Have a look at what I do &rarr;"
 action_type: text
 ---
