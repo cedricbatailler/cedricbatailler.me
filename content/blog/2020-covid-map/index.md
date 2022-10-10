@@ -16,8 +16,6 @@ knitr:
     dev: "ragg_png"
 ---
 
-
-
 The French government has this website called
 [data.gouv.fr](https://data.gouv.fr) with a lot of open access data, including
 data on **how the COVID-19 crisis impacts the French healthcare system**. Here,
@@ -62,7 +60,7 @@ subplots according to a geographical grid. The only information that it needs is
 the data set containing those data we want to map (that we already have)
 and a data set that is setting up geographical data on a grid.
 
-First, let's start by loading a few packages that could be useful.
+First, let’s start by loading a few packages that could be useful.
 
 ``` r
 library(tidyverse)     # general wrangling of the data
@@ -86,8 +84,8 @@ departments <-
              sheet = "departement")
 ```
 
-Now, because we're greedy and because `googlsheet4` is easy to use, we can
-decide to create a second data set so we can add each department's regional
+Now, because we’re greedy and because `googlsheet4` is easy to use, we can
+decide to create a second data set so we can add each department’s regional
 information.
 
 ``` r
@@ -97,7 +95,7 @@ regions <-
 ```
 
 The wrangling we need to do to prepare the data set is minimal. We just have to
-remove french departments that we don't want to plot and add for every
+remove french departments that we don’t want to plot and add for every
 department its regional information.
 
 ``` r
@@ -156,4 +154,4 @@ covid_department_dataset |>
   )
 ```
 
-<img src="index_files/figure-gfm/map-1.png" width="960" />
+<img src="index.markdown_strict_files/figure-markdown_strict/map-1.png" width="960" />
