@@ -7,6 +7,9 @@ summary: |
   most bike friendly. Because tables deserve love as much as plots.
 
 format: hugo
+
+draft: true
+
 freeze: auto
 tags:
 - R
