@@ -102,7 +102,7 @@ googleAnalytics = "G-CSC1TRYSDL"
 [[params.social]]
     icon      = "cv" 
     icon_pack = "ai"
-    url       = "https://cv.cedricbatailler.me/"
+    url       = "https://cedricbatailler.me/cv"
 
 # PRIVACY CONTENT -------------------------------------------------------------
 # see https://gohugo.io/about/hugo-and-gdpr/
