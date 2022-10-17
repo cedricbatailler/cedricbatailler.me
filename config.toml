@@ -99,6 +99,10 @@ googleAnalytics = "G-CSC1TRYSDL"
     icon      = "linkedin" 
     icon_pack = "fab"
     url       = "https://www.linkedin.com/in/cedricbatailler/"
+[[params.social]]
+    icon      = "cv" 
+    icon_pack = "ai"
+    url       = "https://cedricbatailler.me/cv"
 
 # PRIVACY CONTENT -------------------------------------------------------------
 # see https://gohugo.io/about/hugo-and-gdpr/

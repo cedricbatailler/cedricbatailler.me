@@ -11,3 +11,8 @@
   HUGO_VERSION = "0.103.1"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/cv"
+  to = "https://cedricbatailler-cv.netlify.app/"
+  status = 200
