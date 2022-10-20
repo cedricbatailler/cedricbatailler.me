@@ -82,6 +82,12 @@ googleAnalytics = "G-CSC1TRYSDL"
     title = "My project portfolio"
     url = "/contact/"
     weight = 3
+  
+  [[menu.footer]]
+    name = "License"
+    title = "License"
+    url = "/license/"
+    weight = 1
 
 [[params.social]]
     icon = "twitter"
