@@ -60,6 +60,13 @@ googleAnalytics = "G-CSC1TRYSDL"
   textFontFamily = "sans-serif"
   headingFontFamily = "serif"
 
+  [params.utterances]
+    use_utterances = true
+    repo_name = "cedricbatailler/cedricbatailler.me"
+    issue_term = "title" # url, pathname, or title
+    theme = "github-light"
+    label = "comments :crystal_ball:"
+
 # NAVBAR ----------------------------------------------------------------------
 [menu]
   [[menu.header]]
