@@ -1,8 +1,8 @@
 ---
-date: 2022-10-05
+date: 2022-10-20
 
 title: Quarto, Hugo, Apero
-subtitle: How to setup a minimal (but pretty) website in the modern era.
+subtitle: How to set up a minimal (but pretty) website in the modern era.
 author: Cédric Batailler
 
 show_post_date: true
@@ -13,7 +13,7 @@ draft: false
 summary: |
     Follow me on a journey to build this website. The idea is to have a 
     system that has the fewest steps as  possible to go from a blog post on 
-    my computer to a website living online. Among other, I discuss, about 
+    my computer to a website living online. Among other, I discuss about 
     Quarto, Hugo, Github, and Netlify.
 
 format: hugo
@@ -34,14 +34,14 @@ of how it works. Let's go on an adventure!
 {{< figure src="img/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg" caption="Photo by Jan Kahánek." >}}
 
 So, to start blogging. The first thing one needs to do so is a website. I had
-one, but I wasn't really enthusiastic about it anymore. All I had to do was
-to build a system that would work for me. Ideally, this system should
+one, but I wasn't really enthusiastic about it anymore. So all I had to do was
+to build a new system that would work for me. Ideally, this system should
 be minimal--meaning that it should have as few steps as possible between the
 writing of a blog post and its posting, and it should be super easy to show
 code running (because that's what I'd like to put here).
 
-In the end, I decided to use some of the pieces of software that I had used
-before and adopt trade some other. I would use [Quarto](https://quarto.org/)
+In the end, I decided to use some pieces of software that I had used
+before and adopt some other. I would use [Quarto](https://quarto.org/)
 to write the blog post and the code it contains, [Hugo](https://gohugo.io/) to
 generate a static website, and to ditch my old-fashioned Academic theme for
 the refreshing [Apéro](https://github.com/hugo-apero/). Here how it works.
