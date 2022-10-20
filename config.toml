@@ -64,7 +64,7 @@ googleAnalytics = "G-CSC1TRYSDL"
     use_utterances = true
     repo_name = "cedricbatailler/cedricbatailler.me"
     issue_term = "title" # url, pathname, or title
-    theme = "boxy-light"
+    theme = "github-light"
     label = "comments :crystal_ball:"
 
 # NAVBAR ----------------------------------------------------------------------
