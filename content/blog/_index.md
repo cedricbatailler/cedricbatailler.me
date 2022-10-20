@@ -6,6 +6,9 @@ description: |
 
 show_post_thumbnail: true
 show_post_date: true
-show_comments: true
 layout: list
+
+cascade: 
+  show_comments: true
+
 ---
