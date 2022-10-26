@@ -1,5 +1,5 @@
 ---
-date: 2022-10-20
+date: 2022-10-26
 
 title: Quarto, Hugo, Apero
 subtitle: How to set up a minimal (but pretty) website in the modern era.
