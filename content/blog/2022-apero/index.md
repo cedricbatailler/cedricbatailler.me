@@ -182,6 +182,14 @@ Now **the only thing left to do is blogging**. Remember, this was my original
 motivation? And, if everything goes smoothly, you can expect me to document
 some of my project right here! Fingers crossed. 🤞
 
+> **Tip**
+>
+> This blog post was originally written for an audience interested in
+> building their website, but who would not know where to start.
+> Maybe it was your case, maybe it was not. But now that you've read me,
+> maybe you want to know more. If that's the case, you should totally have a look
+> at [the actual code that builds this website](https://github.com/cedricbatailler/cedricbatailler.me/).
+
 [^1]: Actually, Quarto and Rmarkdown play well together, and it was a 5 minutes
     job to convert an old Rmarkdown blog post into a new Quarto one.
 
