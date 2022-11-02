@@ -97,21 +97,25 @@ googleAnalytics = "G-CSC1TRYSDL"
     weight = 1
 
 [[params.social]]
-    icon = "twitter"
+    icon = "mastodon"
     icon_pack = "fab"
-    link = "https://twitter.com/cedricbatailler"
+    url = "https://fosstodon.org/@cedricbatailler"
 [[params.social]]
     icon      = "github" 
     icon_pack = "fab"
     url       = "https://github.com/cedricbatailler"
 [[params.social]]
+    icon      = "linkedin" 
+    icon_pack = "fab"
+    url       = "https://www.linkedin.com/in/cedricbatailler/"
+[[params.social]]
     icon      = "google-scholar" 
     icon_pack = "ai"
     url       = "https://scholar.google.fr/citations?user=3KAcQowAAAAJ"
 [[params.social]]
-    icon      = "linkedin" 
+    icon = "twitter"
     icon_pack = "fab"
-    url       = "https://www.linkedin.com/in/cedricbatailler/"
+    url = "https://twitter.com/cedricbatailler"
 [[params.social]]
     icon      = "cv" 
     icon_pack = "ai"
