@@ -28,17 +28,17 @@ tags:
 ---
 
 With all the drama around the buyout of Twitter, a lot of people around me
-have started joining Mastodon instances. This is a whole new world to discover.
-Danielle Navarro wrote
+have started joining Mastodon instances. **This is a whole new world to
+discover**. Danielle Navarro wrote
 [an amazing piece](https://blog.djnavarro.net/posts/2022-11-03_what-i-know-about-mastodon/)
 on how Mastodon is a different place than Twitter, and it is really
-worth reading it. But even though the two places differ, you might be looking
-for features that are on Twitter. One question you could have could be whether
-there is an equivalent for
+worth reading it. Even though it is easy to understand that the two places
+differ, you might still be looking for features that are on Twitter. And, one
+question you could have could be whether there is an equivalent for
 ([what used to be](https://www.theverge.com/2022/11/9/23449821/twitter-blue-verification-check-mark-subscribers))
 the Twitter certification.
 
-And the answer is yes, but **it's a bit different**.
+And **the answer is yes**, but **it's a bit different**.
 
 ## Mastodon's verification features
 
