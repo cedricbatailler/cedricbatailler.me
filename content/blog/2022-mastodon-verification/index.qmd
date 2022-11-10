@@ -11,6 +11,10 @@ summary: |
   impersonation on Mastodon. It has exactly two steps and can be done in less 
   than 5 minutes.
 
+description: |
+    Mastodon can help people know that your account is linked to 
+    other resources on the internet. Learn about how to set that up.
+
 author: Cédric Batailler
 
 show_post_date: true
@@ -61,7 +65,7 @@ a green mark will appear next to the link that you validated.
 
 ---
 
-## How to set Mastodon crosslink verification?
+## How to set up Mastodon crosslink verification?
 
 To set that up, the only thing one has to do to get the green check mark is to 
 reference a ressource that has a link back to their Mastodon profile. Be 
