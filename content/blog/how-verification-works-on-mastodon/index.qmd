@@ -69,8 +69,11 @@ a green mark will appear next to the link that you validated.
 
 To set that up, the only thing one has to do to get the green check mark is to 
 reference a ressource that has a link back to their Mastodon profile. Be 
-careful, this link MUST have a `rel="me"` attribute. That is, when I wanted to 
-get a green mark next to my website on [my Mastodon account](https://fosstodon.org/@cedricbatailler), all I had to do is to write the following:
+careful, this link MUST have 
+[a `rel="me"` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/me). 
+That is, when I wanted to get a green mark next to my website on 
+[my Mastodon account](https://fosstodon.org/@cedricbatailler), all I had to do 
+is to write the following:
 
 ```
 <a rel="me" href="https://fosstodon.org/@cedricbatailler">Mastodon</a>
