@@ -16,3 +16,8 @@
   from = "/cv"
   to = "https://cedricbatailler-cv.netlify.app/"
   status = 200
+
+[[redirects]]
+  from = "/JSmediation"
+  to = "https://jsmediation.cedricbatailler.me/"
+  status = 301
