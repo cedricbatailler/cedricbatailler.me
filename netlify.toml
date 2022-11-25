@@ -21,3 +21,8 @@
   from = "/JSmediation"
   to = "https://jsmediation.cedricbatailler.me/"
   status = 301
+
+[[redirects]]
+  from = "/scholar"
+  to = "https://scholar.google.com/citations?user=3KAcQowAAAAJ"
+  status = 301
