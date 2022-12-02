@@ -3,3 +3,5 @@
 .hugo_build.lock
 
 /.quarto/
+
+.Rproj.user
